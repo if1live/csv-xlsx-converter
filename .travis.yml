@@ -8,3 +8,5 @@ gemfile:
 script:
   - rake
 
+notifications:
+  email: false
