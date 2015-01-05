@@ -2,8 +2,10 @@ source "http://rubygems.org"
 
 gem "rubyXL", ">= 3.3.2"
 
-# Development dependencies
+group :development, :test do
+  gem 'rake', '~> 0.9.2'
+end
+
 group :test do
-  gem "rake"
-  gem "rspec", ">= 3.1.0"
+  gem 'rspec', '~> 2.13'
 end
