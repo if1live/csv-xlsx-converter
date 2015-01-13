@@ -27,6 +27,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "csv-xlsx-converter.gemspec",
     "data/sample-1.csv",
     "lib/csv_xlsx_converter.rb",
     "lib/csv_xlsx_converter/cli.rb",
