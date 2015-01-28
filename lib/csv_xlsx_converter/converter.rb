@@ -44,8 +44,12 @@ module CsvXlsxConverter
         worksheet.each_with_index do |row, row_idx|
           row_data = []
           (0...row.size).each do |col_idx|
-            cell = row[col_idx]
-            row_data << cell.value
+            begin
+              cell = row[col_idx]
+              row_data << cell.value
+            rescue NoMethodError
+              row_data << ""
+            end
           end
           csv << row_data
         end
