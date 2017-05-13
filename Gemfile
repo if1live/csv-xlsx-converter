@@ -7,6 +7,6 @@ group :development do
   gem "rake"
   gem "jeweler", "~> 2.0.1"
   #gem "simplecov", ">= 0"
-  gem "rspec", "~> 2.13"
-  gem "rdoc", "~> 3.12"
+  gem "rspec", "~> 3.6"
+  gem "rdoc", "~> 5.1"
 end
