@@ -1,5 +1,8 @@
 = csv-xlsx-converter
+{<img src="https://img.shields.io/gem/v/csv-xlsx-converter.svg" alt="Gem Version"/>}[https://rubygems.org/gems/csv-xlsx-converter]
 {<img src="https://travis-ci.org/if1live/csv-xlsx-converter.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/if1live/csv-xlsx-converter]
+
+
 
 == To Install:
   gem install csv-xlsx-converter
