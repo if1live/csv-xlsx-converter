@@ -2,9 +2,7 @@
 {<img src="https://travis-ci.org/if1live/csv-xlsx-converter.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/if1live/csv-xlsx-converter]
 
 == To Install:
-  gem install rubyXL
-  # or...
-  bundle install
+  gem install csv-xlsx-converter
 
 == Usage
 Command line script get one or two arguments.
@@ -16,12 +14,12 @@ If second argment is not predefined, use first filename as excel xlsx filename.
 For example, input filename is foo.csv then output filename is foo.xlsx.
 
 === CSV to Excel xlsx:
-  csv_xlsx_converter.rb input.csv
-  csv_xlsx_converter.rb input.csv output.xlsx
+  csv_to_xlsx input.csv
+  csv_to_xlsx input.csv output.xlsx
 
 === Excel xlsx to CSV:
-  csv_xlsx_converter.rb input.xlsx
-  csv_xlsx_converter.rb input.xlsx output.csv
+  csv_to_xlsx input.xlsx
+  csv_to_xlsx input.xlsx output.csv
 
 == Copyright
 
