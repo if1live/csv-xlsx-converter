@@ -24,6 +24,17 @@ For example, input filename is foo.csv then output filename is foo.xlsx.
   csv_to_xlsx input.xlsx
   csv_to_xlsx input.xlsx output.csv
 
+== Development
+  # prepare repository
+  git clone https://github.com/if1live/csv-xlsx-converter.git
+  cd csv-xlsx-converter
+
+  # install dependencies
+  bundle install
+
+  # run test case
+  rake spec
+
 == Copyright
 
 Copyright (c) 2015 if1live. See LICENSE.txt for
