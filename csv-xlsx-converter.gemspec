@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0".freeze) if s.respond_to? :required_rubygems_version=
   s.require_paths = ["lib".freeze]
   s.authors = ["if1live".freeze]
-  s.date = "2017-05-13"
+  s.date = "2017-08-23"
   s.description = "Convert CSV to Excel xlsx, Excel xlsx to CSV.".freeze
   s.email = "libsora25@gmail.com".freeze
   s.executables = ["csv_to_xlsx".freeze]
