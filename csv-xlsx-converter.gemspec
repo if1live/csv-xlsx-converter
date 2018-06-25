@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.date = "2017-08-23"
   s.description = "Convert CSV to Excel xlsx, Excel xlsx to CSV.".freeze
   s.email = "libsora25@gmail.com".freeze
-  s.executables = ["csv_to_xlsx".freeze]
+  s.executables = ["csv_to_xlsx".freeze, "xlsx_to_csv".freeze]
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"

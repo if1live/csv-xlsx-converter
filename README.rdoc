@@ -21,8 +21,8 @@ For example, input filename is foo.csv then output filename is foo.xlsx.
   csv_to_xlsx input.csv output.xlsx
 
 === Excel xlsx to CSV:
-  csv_to_xlsx input.xlsx
-  csv_to_xlsx input.xlsx output.csv
+  xlsx_to_csv input.xlsx
+  xlsx_to_csv input.xlsx output.csv
 
 == Development
   # prepare repository
