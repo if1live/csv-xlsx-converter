@@ -29,7 +29,8 @@ module CsvXlsxConverter
   end
 
   class XlsxToCsv
-    def initialize(input_file)
+    def initialize(*args)
+      input_file = args[0]
       raise ArgumentError, "input file is not xlsx" unless CsvXlsxConverter::xlsx_filename? input_file
       @input_file = input_file
     end
