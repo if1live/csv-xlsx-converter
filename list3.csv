@@ -1,7 +1,0 @@
-,Active Status,Type,Item,Description,Sales Tax Code,Account,COGS Account,Asset Account,Accumulated Depreciation,Purchase Description,Quantity On Hand,U/M,Cost,Preferred Vendor,Tax Agency,Price,Reorder Pt (Min),MPN
-,Active,Service,-7.25,,,,,,0,,0,,0,,,0,0,
-,Active,Service,Donation,Donation,,DONATIONS:General Donations,,,0,,,,0,,,0,,
-,Active,Service,Joe,from amazon - clothing,,SERVICES FOR MISSIONS INCOME:Flight Cargo Revenue,,,0,,,,0,,,1.6,,
-,Not-active,Service,Sales,,,Sales,,,0,,,,0,,,0,,
-,Active,Other Charge,FLIGHT CARGO,,,SERVICES FOR MISSIONS INCOME:Flight Cargo Revenue,,,0,,,,0,,,,,
-,Active,Other Charge,MISSIONS CUSTOMS,,,SERVICES FOR MISSIONS INCOME,,,0,,,,0,,,,,
