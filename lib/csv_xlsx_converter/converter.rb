@@ -50,8 +50,7 @@ module CsvXlsxConverter
 
       CSV.open(output_file, "wb") do |csv|
         workbook = RubyXL::Parser.parse @input_file
-        idx = @worksheet_idx
-        worksheet = workbook[idx]
+        worksheet = workbook[@worksheet_idx]
         worksheet.each_with_index do |row, row_idx|
           row_data = []
           (0...row.size).each do |col_idx|
