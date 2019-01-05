@@ -8,10 +8,13 @@
   gem install csv-xlsx-converter
 
 == Usage
-Command line script get one or two arguments.
+Command line script takes 1, 2 or 3 arguments.
 
 1. First argument : Input filename (Required)
 2. Second argument : Output filename (Optional)
+3. Third argument : Index of worksheet to export to csv (applies only to xlsx to csv)
+   First worksheet is 0, second is 1, and so on. If this is used, argument 2 is not 
+   optional.
 
 If second argment is not predefined, use first filename as excel xlsx filename.
 For example, input filename is foo.csv then output filename is foo.xlsx.
@@ -23,6 +26,7 @@ For example, input filename is foo.csv then output filename is foo.xlsx.
 === Excel xlsx to CSV:
   csv_to_xlsx input.xlsx
   csv_to_xlsx input.xlsx output.csv
+  csv_to_xlsx input.xlsx output.csv 1 (this would export 2nd worksheet as csv)
 
 == Development
   # prepare repository
