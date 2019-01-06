@@ -3,6 +3,10 @@
 {<img src="https://travis-ci.org/if1live/csv-xlsx-converter.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/if1live/csv-xlsx-converter]
 
 
+
+== To Install:
+  gem install csv-xlsx-converter
+
 == Usage
 Command line script takes 1, 2 or 3 arguments.
 
@@ -22,11 +26,11 @@ For example, input filename is foo.csv then output filename is foo.xlsx.
 === Excel xlsx to CSV:
   csv_to_xlsx input.xlsx
   csv_to_xlsx input.xlsx output.csv
-  csv_to_xlsx input.xlsx output.csv 1 (this would export 2nd worksheet as csv)
+  csv_to_xlsx input.xlsx output.csv 1 #(this would export 2nd worksheet as csv)
 
 == Development
   # prepare repository
-  git clone https://github.com/RhetTbull/csv-xlsx-converter.git
+  git clone https://github.com/if1live/csv-xlsx-converter.git
   cd csv-xlsx-converter
 
   # install dependencies
@@ -35,21 +39,7 @@ For example, input filename is foo.csv then output filename is foo.xlsx.
   # run test case
   rake spec
 
-  # build
-  gem build csv-xlsx-converter.gemspec
-
-  # install
-  gem install csv-xlsx-converter
-
-== Attribution
-
-I forked this from https://github.com/if1live/csv-xlsx-converter and made 1 change
-to add an optional 3rd parameter to specify which worksheet in a multi-worksheet 
-Excel workbook to export for workbooks with more than 1 workbook.
-
 == Copyright
 
 Copyright (c) 2015 if1live. See LICENSE.txt for
 further details.
-
-
