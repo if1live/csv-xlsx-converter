@@ -12,9 +12,10 @@ Command line script takes 1, 2 or 3 arguments.
 
 1. First argument : Input filename (Required)
 2. Second argument : Output filename (Optional)
-3. Third argument : Index of worksheet to export to csv (applies only to xlsx to csv)
+3. Third argument : Index of worksheet to export to csv 
+   (Optional; applies only to xlsx to csv conversion)
    First worksheet is 0, second is 1, and so on. If this is used, argument 2 is not 
-   optional.
+   optional.  This is useful when xlsx workbook has more than one worksheet.
 
 If second argment is not predefined, use first filename as excel xlsx filename.
 For example, input filename is foo.csv then output filename is foo.xlsx.
