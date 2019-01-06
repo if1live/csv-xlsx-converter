@@ -25,6 +25,7 @@ module CsvXlsxConverter
   def self.handle_inout param
     input = param[0]
     output = param[1]
+    idx = param.count > 2 ? param[2] : 0
 
     begin
       if self.csv_filename? input
@@ -32,13 +33,14 @@ module CsvXlsxConverter
         conv.convert output
 
       elsif self.xlsx_filename? input
-        conv = self::XlsxToCsv.new input
+        conv = self::XlsxToCsv.new input, idx
         conv.convert output
       end
-    rescue
+    rescue  
       puts "not vaild argv"
       puts "input: #{input}"
       puts "output: #{output}"
+      puts "worksheet index (optional): #{idx}"
     end
   end
 
@@ -47,9 +49,12 @@ module CsvXlsxConverter
       handle_in ARGV
     elsif ARGV.size == 2
       handle_inout ARGV
+    elsif ARGV.size == 3
+      handle_inout ARGV
     else
       puts "Usage: #{$0} <input:*.csv/*.xlsx>"
-      puts "Usage: #{$0} <input:*.csv/*.xlsx> <output:*.cvs/*.xlsx>"
+      puts "Usage: #{$0} <input:*.csv/*.xlsx> <output:*.cvs/*.xlsx>"      
+      puts "Usage: #{$0} <input:*.csv/*.xlsx> <output:*.cvs/*.xlsx> <worksheet_index:integer>"
     end
   end
 end
